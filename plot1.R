@@ -9,5 +9,5 @@ hist(as.numeric(as.character(subconsum$Global_active_power)),col="red",
      main="Global Active Power",
      xlab="Global Active Power (kilowatts)")
 title(main="Global Active Power")
-png("plot1.png", width=480, height=480)
+dev.copy(png, file="plot1.png", height=480, width=480)
 dev.off()
